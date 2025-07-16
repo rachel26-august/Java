@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "paragraphy changed."; }
+
+        </script>
+    </head>
+    <body>
+
+        <h2>Demo JavaScript in Head</h2>
+
+        <p id="demo">A Paragraphy.</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+    
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p>This example links to "myScript.js"</p>
+    <p>(myunction is stored in "myScript.js")</p>
+
+    
+        
+        <h1>My Wed Page</h1>
+        <p>My First Paragraph</p>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById('demo').innerHTML = "<h2>Hello World</h2>";
+        </script>
+
+        <h2>My First Wed Page </h2>
+        <p>My first paragraph.</p>
+
+        <p>Never call document.write after the document has finished loading.
+            It will overwrite the whole document.
+        </p>
+        <script>
+            document.write(5+6);
+        </script>
+
+        <h2>My First Wed Page </h2>
+        <p>My first paragraph.</p>
+
+        <script>
+            window.alert(5 + 6);
+        </script>
+
+        <h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+console.log(5 + 6);
+</script>
+
+
+        
+
+
+
+        
+    
+    </body>
+
+</html>

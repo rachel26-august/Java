@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The reverse() Method</h2>
+
+<p id="demo"></p>
+
+
+<script>
+const months = ["Jan", "Feb", "Mar", "April"];
+const sorted = months.tosorted();
+
+document.getElementById("demo").innerHTML = sorted;
+
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array</h2>
+<h3>The forEach Method</h3>
+
+
+<p>call a function once for each array element</p>
+
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>";
+}
+</script>
+
+</body>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array</h2>
+<h3>The forEach Method</h3>
+
+
+<p>call a function once for each array element</p>
+
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+}
+</script>
+
+</body>
+</html>
+
+Here’s an example of using the forEach function in JavaScript, where both the item and its index are utilized:
+
+Copy the code
+const fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
+
+fruits.forEach((fruit, index) => {
+  console.log(`Index ${index}: ${fruit}`);
+});
+
+Explanation:
+fruits is an array of strings.
+The forEach method iterates over each element in the array.
+The callback function takes two arguments:
+fruit: The current item in the array.
+index: The index of the current item.
+The console.log outputs both the index and the corresponding fruit.
+
+Output:
+
+Copy the code
+Index 0: Apple
+Index 1: Banana
+Index 2: Cherry
+Index 3: Date
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Array</h2>
+<h3>The map() Method</h3>
+
+
+<p>create a new array by performing a function on each array element</p>
+
+
+<p id="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 =
+numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+ return value *2;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The map() Method</h2>
+
+<p>Create a new array by performing a function on each array element:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value) {
+  return value * 2;
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The flatMap() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+const myArr = [1, 2, 3, 4, 5,6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Create a new array from all array elements that passes a test:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+const over10 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over10;
+
+function myFunction(value, index, array) {
+  return value > 10;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The from() Method</h2>
+
+<p>The from() method can return an array from any variable with a length property.</p>
+<p>It can return a string as an array:</p>
+<p id="demo"></p>
+
+<script>
+let text = "ABCDEFG";
+const myArr = Array.from(text);
+document.getElementById("demo").innerHTML = myArr;
+</script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The keys() Method</h2>
+
+<p>Return an Array Iterator object with the keys of the array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+
+let text ="";
+for (let x of keys) {
+  text += x +"<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The keys() Method</h2>
+
+<p>Return an Array Iterator object with the keys of the array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+let text ="";
+for (let x of f) {
+
+document.getElementById("demo").innerHTML += x + "<br>";
+}
+</script>
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The entries() Method</h2>
+
+<p>Return an Array Iterator object with the keys of the array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+let text ="";
+for (let x of f) {
+
+document.getElementById("demo").innerHTML += x + "<br>";
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is a simple and effective way to loop through an array while accessing both the item and its index.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<h3>looping an Array</h2>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let  fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+   text += "<li>" + fruits[i] + "<li>";
+}
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<h3>looping an Array</h2>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>"
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Grape"];
+document.getElementById("demo").innerHTML = fruits[0];
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>Arrays toString()</h3>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Grape"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>Changing an Array</h3>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Grape"];
+fruits[0] = "Pinapple";
+document.getElementById("demo").innerHTML = fruits[0];
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>Object</h3>
+<p id="demo"></p>
+
+<script>
+let animals = {firstName:"dog", secondName:"cat", lastName:"goat"};
+
+document.getElementById("demo").innerHTML = animals.firstName;
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>last Array</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let length = animals.length
+
+document.getElementById("demo").innerHTML = animals.length;
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>Length Property</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let size = animals.length = 2;
+
+document.getElementById("demo").innerHTML = animals;
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Length Method</h2>
+<h3>lengthProperty</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let size = animals.length;
+
+document.getElementById("demo").innerHTML = size;
+
+</script>
+
+</body>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+<h3>last Array</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let myCatalog = animals.toString();
+
+document.getElementById("demo").innerHTML = myCatalog;
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+<h3>last Array</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let animal = animals[2]
+
+
+document.getElementById("demo").innerHTML = animal;
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+<h3>at() method</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+let animal = animals[2]
+
+
+document.getElementById("demo").innerHTML = animal;
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>join() method</h3>
+<p id="demo"></p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+document.getElementById("demo").innerHTML = animals.join(" * ");
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the pop() Method</h3>
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+document.getElementById("demo1").innerHTML = animals;
+animals.pop();
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the pop() Method</h3>
+
+<p>The pop() method returns the value that was "popped out"</p>
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+document.getElementById("demo1").innerHTML = animals.pop();
+
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the push() Method</h3>
+
+<p>The push() method add new array length "</p>
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+document.getElementById("demo1").innerHTML = animals;
+animals.push("cow");
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the shift() Method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML = animals;
+animals.shift()
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the shift() Method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML = animals.shift();
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the unshift() Method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML = animals; 
+animals.unshift("sheep");
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the unshift() Method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML =  animals.unshift("sheep");
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the unshift() Method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML =  animals.unshift("sheep");
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the length property</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML =  animals;
+animals[animals.length] = "cow";
+document.getElementById("demo2").innerHTML = animals;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the delete method</h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"</p>
+
+<script>
+const animals = ["dog", "cat", "goat"];
+
+document.getElementById("demo1").innerHTML =  "The first animal is: " + animals[0];
+
+delete animals[0];
+
+document.getElementById("demo2").innerHTML = "The first animal is: " + animals[0];
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the concat() method </h3>
+
+
+<p id="demo"></p>
+<script>
+const myGirls = ["Cecilie", "lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+document.getElementById("demo").innerHTML = myChildren;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the copyWithin() method </h3>
+
+
+<p id="demo"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.copyWithin(2,0);
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the flat() method </h3>
+
+
+<p id="demo"></p>
+<script>
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the flatMap() method </h3>
+
+
+<p id="demo"></p>
+<script>
+const myArr = [1, 2, 3, 4, 5, 6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+document.getElementById("demo").innerHTML = newArr;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>js Arrays</h2>
+<h3>the slice() method </h3>
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+
+
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The splice() Method</h2>
+
+<p>The splice() methods can be used to remove array elements:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.splice(2, 1);
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</bo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

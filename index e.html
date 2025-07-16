@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Object</h1>
+<h2>Object Methods</h2>
+
+<p>A method is a function definition stored as a property value.</p>
+<p id="demo"></p>
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+   return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+
+<h2>Adding a Method</h2>
+<p id="demo"</p>
+
+<script>
+//create an object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+
+//Add a method
+person.name = function() {
+   return this.firstName + " " + this.lastName;
+};
+
+//Display object Data
+document.getElementById("demo").innerHTML = "My father is " + person.name();
+
+</script>
+
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+
+// Add a Method
+person.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+// Display Object Data
+document.getElementById("demo").innerHTML =
+"My father is " + person.name(); 
+</script>
+
+<h1>Javascript object</h1>
+
+<p id="demo"></p>
+
+<script>
+//create an object 
+const person = {
+  name; "John",
+  age: 30,
+  city: "New York"
+};
+
+//Display Properties
+document.getElementById("demo"0.innerHTML + person.name + ", " + person.age + ", " + person.city;
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>

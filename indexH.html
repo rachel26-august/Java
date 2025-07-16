@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+   <meta charset="utf-8">
+   <title>Adding Events in Js</title>
+</head>
+<body>
+   <h1>JavaScript HTML Events</h1>
+   <h2>The onclick Attribute</h2>
+
+<button 
+onclick="document.getElementById('first').innerHTML=Date()">The time is?
+</button>
+
+<p id="first">The time is?</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JvaScript strings</h1>
+<p id="demo"></p>
+
+<script>
+let text ="John Doe"; //string written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JvaScript strings</h1>
+
+<p>The escape sequence \\ inserts a backslash in a string
+
+<p id="demo"></p>
+
+<script>
+let text = "The character \\ is called backslash."; 
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript string</h1>
+<h2>The IndexOf() Method</h2>
+
+<p>The position of the last occurence of "locate" is:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate");
+document.getElementById("demo").innerHTML = index;
+</script>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript string</h1>
+<h2>The search() Method</h2>
+
+<p>The position of the last occurence of "locate" is:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.search("locate");
+document.getElementById("demo").innerHTML = index;
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript string</h1>
+<h2>The match()method</h2>
+
+<p>Perform a global search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match(/ain/);
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript string</h1>
+<h2>The matchAll().</h2>
+
+<p>ES2020 introduced the string method matchAll.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+const iterator = text.matchAll("Cats");
+document.getElementById("demo").innerHTML = Array.from(iterator)
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+<h2>The matchAll().</h2>
+
+<p>Templates use back-ticks (``) to define a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = `Hello world!`;
+const iterator = text.matchAll("Cats");
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+</body>
+</html>
+
+</body>
+</html>

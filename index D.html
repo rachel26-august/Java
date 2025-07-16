@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Variables</h1>
+        <div>
+            Name: <div id="demo"></div>
+            Cars: <div id="cars"></div>
+            Date<div id="date"></div>
+        </div>
+
+        <div>
+            Gender: <p id="gender"></p>
+            age: <p id="age"></p>
+            place: <p id="place"></p>
+        </div>
+    
+
+<script>
+    // Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+const Rachel = {gender:"Female", age:12, place:"Buea"};
+
+// document.getElementById('demo').textContent = person.firstName + " " + person.lastName
+
+// console.log(person);
+
+document.getElementById("gender").textContent = Rachel.gender;
+document.getElementById("age").textContent = Rachel.age;
+document.getElementById("place").textContent = Rachel.place;
+
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW", "ghdghdg"];
+document.getElementById('cars').textContent =  cars[3]
+
+// Date object:
+const date = new Date("2022-03-25");
+document.getElementById('date').textContent =date
+</script>
+
+
+
+</body>
+</html>
